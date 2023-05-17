@@ -1,0 +1,97 @@
+.quizContainer{
+   
+    background-color:antiquewhite;
+    margin: auto;
+    width: 60%;
+    padding: 5%;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+.innerBox{
+    padding:0 10%;
+}
+
+.title{
+    font-family: 'LobsterRegular';
+    display: flex;
+  justify-content: center;
+  font-weight: 200;
+  font-size: 40px;
+}
+.question{
+    font-family: 'LobsterRegular';
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.questionNumber{
+    margin:10px 0;
+    font-family: 'LobsterRegular';
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.options{
+list-style-type: none;
+padding-left: 0;
+}
+
+.optionList{
+    font-family: 'LobsterRegular';
+    background:  linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+    padding: 10px;
+    margin:20px 0;
+    cursor: pointer;
+    border-radius: 25px;
+    justify-content: center;
+    display: flex;
+    font-weight:200;
+    font-size:18px;
+    color:#fff;
+}
+
+.nextBtnWrapper{
+   display: flex;
+   width: 100%;
+   justify-content: right;
+}
+.nextBtn{
+    
+
+}
+button {
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transform: translate(-0.05em, -0.05em);
+  }
+  button:hover{
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+  }
+  
+  button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );
+    transition: 0.5s;
+  }
